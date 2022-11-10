@@ -129,7 +129,7 @@ function card() {
       <img src=${data[i].image} alt="" class="overflow-hidden rounded-t-lg">
       <p class="m-3 mb-1">${data[i].namaObat}</p>
       <p class="font-extralight mx-3 mb-1">${data[i].category}</p>
-      <p class="mx-3">${data[i].harga}</p>
+      <p class="mx-3">Rp ${data[i].harga}</p>
       </div>
       <div class="flex justify-center">
       <button class="bg-white text-black my-7  rounded-md px-12 py-2 hover:bg-[#282828] hover:text-white duration-300">Add Chart</button></div>
@@ -141,7 +141,7 @@ function card() {
         <img src=${data[i].image} alt="" class="overflow-hidden rounded-t-lg">
         <p class="m-3 mb-1">${data[i].namaObat}</p>
         <p class="font-extralight mx-3 mb-1">${data[i].category}</p>
-        <p class="mx-3">${data[i].harga}</p>
+        <p class="mx-3">Rp ${data[i].harga}</p>
         </div>
         <div class="flex justify-center">
         <button class="bg-white text-black my-7  rounded-md px-12 py-2 hover:bg-[#282828] hover:text-white duration-300">Add Chart</button></div>
@@ -153,7 +153,7 @@ function card() {
     <img src=${data[i].image} alt="" class="overflow-hidden rounded-t-lg">
     <p class="m-3 mb-1">${data[i].namaObat}</p>
     <p class="font-extralight mx-3 mb-1">${data[i].category}</p>
-    <p class="mx-3">${data[i].harga}</p>
+    <p class="mx-3">Rp ${data[i].harga}</p>
     </div>
     <div class="flex justify-center">
     <button class="bg-white text-black my-7  rounded-md px-12 py-2 hover:bg-[#282828] hover:text-white duration-300">Add Chart</button></div> 
@@ -164,7 +164,7 @@ function card() {
     <img src=${data[i].image} alt="" class="overflow-hidden rounded-t-lg">
     <p class="m-3 mb-1">${data[i].namaObat}</p>
     <p class="font-extralight mx-3 mb-1">${data[i].category}</p>
-    <p class="mx-3">${data[i].harga}</p>
+    <p class="mx-3">Rp ${data[i].harga}</p>
     </div>
     <div class="flex justify-center">
     <button class="bg-white text-black my-7  rounded-md px-12 py-2 hover:bg-[#282828] hover:text-white duration-300">Add Chart</button></div>
