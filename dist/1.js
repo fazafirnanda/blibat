@@ -132,7 +132,7 @@ function card() {
       <p class="mx-3">Rp ${data[i].harga}</p>
       </div>
       <div class="flex justify-center">
-      <button class="bg-white text-black my-7  rounded-md px-12 py-2 hover:bg-[#282828] hover:text-white duration-300">Add Chart</button></div>
+      <button onClick="" class="bg-white text-black my-7 rounded-md px-12 py-2 hover:bg-[#282828] hover:text-white duration-300">Add Cart</button></div>
       </div>`;
     } else if (data[i].category === "Pusing") {
       getCardPusing.innerHTML += `
@@ -144,7 +144,7 @@ function card() {
         <p class="mx-3">Rp ${data[i].harga}</p>
         </div>
         <div class="flex justify-center">
-        <button class="bg-white text-black my-7  rounded-md px-12 py-2 hover:bg-[#282828] hover:text-white duration-300">Add Chart</button></div>
+        <button onClick="" class="bg-white text-black my-7  rounded-md px-12 py-2 hover:bg-[#282828] hover:text-white duration-300">Add Cart</button></div>
         </div>
       `;
     } else if (data[i].category === "Maag") {
@@ -156,7 +156,7 @@ function card() {
     <p class="mx-3">Rp ${data[i].harga}</p>
     </div>
     <div class="flex justify-center">
-    <button class="bg-white text-black my-7  rounded-md px-12 py-2 hover:bg-[#282828] hover:text-white duration-300">Add Chart</button></div> 
+    <button onClick="" class="bg-white text-black my-7  rounded-md px-12 py-2 hover:bg-[#282828] hover:text-white duration-300">Add Cart</button></div> 
     </div>`;
     } else if (data[i].category === "Batuk & Flu") {
       getCardBatuk.innerHTML += `<div class="w-1/4 flex flex-col bg-[#ddeedf] rounded-lg hover:scale-110 ease-in-out transition-all shadow-lg duration-300 justify-between">
@@ -167,7 +167,7 @@ function card() {
     <p class="mx-3">Rp ${data[i].harga}</p>
     </div>
     <div class="flex justify-center">
-    <button class="bg-white text-black my-7  rounded-md px-12 py-2 hover:bg-[#282828] hover:text-white duration-300">Add Chart</button></div>
+    <button onClick="" class="bg-white text-black my-7  rounded-md px-12 py-2 hover:bg-[#282828] hover:text-white duration-300">Add Cart</button></div>
     </div>`;
     }
   }
