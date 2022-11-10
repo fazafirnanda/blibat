@@ -14,17 +14,21 @@
                 <img src="../src/file-excel-fill.svg" alt="" class="w-6" id="closeSideNav">
             </button>
         </div>
-        <div class="w-full text-center">
-            <h1 class="text-xl font-extralight text-black">Your Cart</h1>
-            <p class="mt-10 text-black">Order dulu kali jangan asal pencet doang hehehehe</p>
-            <h1 class="text-black text-xl font-extrabold">Brand</h1>
-            <h2 class="text-black">Price</h2>
+        <div class="w-full px-4">
+            <div class="text-center">
+                <h1 class="text-xl font-extralight text-black mb-4">Your Cart</h1>
+            </div>
+            <div class="" id="cardProduk">
+                <h1 class="text-black text-xl font-extrabold">Brand</h1>
+                <h2 class="text-black">IDR Price</h2>
+            </div>
 
         </div>
-        <div class="bottom-0 bg-green-500 text-black">
-            <button class="">
-                Buy
-            </button>
+
+        <div class="text-black fixed bottom-4 w-full items-center flex">
+            <div>
+                <button class="p-2 bg-green-500">Buy Now</button>
+            </div>
         </div>
     </div>
     
@@ -217,7 +221,7 @@
             const sideBar = document.querySelector('#sideBar')
             const isActive = sideBar.classList.contains('invisible')
 
-            if (isActive) {                
+            if(isActive) {                
                 sideBar.classList.remove('invisible')
                 sideBar.classList.add('translate-x-full')
                 sideBar.classList.add('opacity-100')
