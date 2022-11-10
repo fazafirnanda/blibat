@@ -42,9 +42,9 @@ const data = [
       category: "pusing",
     },
     {
-      namaObat: "Flunarizine 5 mg 20 Tablet",
-      image: "https://d2qjkwm11akmwu.cloudfront.net/products/others-1665843868.webp",
-      harga: 30000,
+      namaObat: "Alphamol 600 mg 10 Kaplet",
+      image: "https://d2qjkwm11akmwu.cloudfront.net/products/700008_16-6-2019_22-36-47-1665760948.webp",
+      harga: 6000,
       category: "pusing",
     },
     {
@@ -109,7 +109,7 @@ const data = [
     let getCardPusing = document.getElementById("pusing-container");
     let getCardDemam = document.getElementById("demam-container");
     let getCardMaag = document.getElementById("maag-container");
-    let getCardMasuk = document.getElementById("masuk-container");
+    let getCardBatuk = document.getElementById("batuk-container");
     // getCardPusing.innerHTML = ""
     // let tempHTML = ""
     // document.getElementById("test").innerHTML = `<p>test</p>`
@@ -165,7 +165,7 @@ const data = [
       <button class="bg-white text-black mx-4 my-7 rounded-md p-1 hover:bg-[#282828] hover:text-white duration-300">Add Chart</button> </div>`
     }
     else if (data[i].category === "batuk & flu"){
-      getCardbatuk.innerHTML +=    
+      getCardBatuk.innerHTML +=    
       `<div class="w-1/4 flex flex-col bg-[#ddeedf] rounded-lg hover:scale-110 ease-in-out transition-all shadow-lg duration-300">
       <img src=${data[i].image} alt="" class="overflow-hidden rounded-t-lg">
       <p class="m-3 mb-1">${data[i].namaObat}</p>
