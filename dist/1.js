@@ -124,38 +124,55 @@ function card() {
   for (let i = 0; i < data.length; i++) {
     // untuk melooping tampilan product didalam homepage
     if (data[i].category === "Demam") {
-      getCardDemam.innerHTML += `<div class="w-1/4 flex flex-col bg-[#ddeedf] rounded-lg hover:scale-110 ease-in-out transition-all shadow-lg duration-300">
+      getCardDemam.innerHTML += `<div class="w-1/4 flex flex-col bg-[#ddeedf] rounded-lg hover:scale-110 ease-in-out transition-all shadow-lg duration-300 justify-between">
+      <div>
       <img src=${data[i].image} alt="" class="overflow-hidden rounded-t-lg">
       <p class="m-3 mb-1">${data[i].namaObat}</p>
       <p class="font-extralight mx-3 mb-1">${data[i].category}</p>
       <p class="mx-3">${data[i].harga}</p>
-      <button class="bg-white text-black mx-4 my-7 rounded-md p-1 hover:bg-[#282828] hover:text-white duration-300">Add Chart</button> </div>`;
+      </div>
+      <div class="flex justify-center">
+      <button class="bg-white text-black my-7  rounded-md px-12 py-2 hover:bg-[#282828] hover:text-white duration-300">Add Chart</button></div>
+      </div>`;
     } else if (data[i].category === "Pusing") {
       getCardPusing.innerHTML += `
-      <div class="w-1/4 flex flex-col bg-[#ddeedf] rounded-lg hover:scale-110 ease-in-out transition-all shadow-lg duration-300">
+      <div class="w-1/4 flex flex-col bg-[#ddeedf] rounded-lg hover:scale-110 ease-in-out transition-all shadow-lg duration-300 justify-between">
+      <div>
         <img src=${data[i].image} alt="" class="overflow-hidden rounded-t-lg">
         <p class="m-3 mb-1">${data[i].namaObat}</p>
         <p class="font-extralight mx-3 mb-1">${data[i].category}</p>
         <p class="mx-3">${data[i].harga}</p>
-        <button class="bg-white text-black mx-4 my-7 rounded-md p-1 hover:bg-[#282828] hover:text-white duration-300">Add Chart</button> </div>
+        </div>
+        <div class="flex justify-center">
+        <button class="bg-white text-black my-7  rounded-md px-12 py-2 hover:bg-[#282828] hover:text-white duration-300">Add Chart</button></div>
+        </div>
       `;
     } else if (data[i].category === "Maag") {
-      getCardMaag.innerHTML += `<div class="w-1/4 flex flex-col bg-[#ddeedf] rounded-lg hover:scale-110 ease-in-out transition-all shadow-lg duration-300">
+      getCardMaag.innerHTML += `<div class="w-1/4 flex flex-col bg-[#ddeedf] rounded-lg hover:scale-110 ease-in-out transition-all shadow-lg duration-300 justify-between">
+    <div>
     <img src=${data[i].image} alt="" class="overflow-hidden rounded-t-lg">
     <p class="m-3 mb-1">${data[i].namaObat}</p>
     <p class="font-extralight mx-3 mb-1">${data[i].category}</p>
     <p class="mx-3">${data[i].harga}</p>
-    <button class="bg-white text-black mx-4 my-7 rounded-md p-1 hover:bg-[#282828] hover:text-white duration-300">Add Chart</button> </div>`;
+    </div>
+    <div class="flex justify-center">
+    <button class="bg-white text-black my-7  rounded-md px-12 py-2 hover:bg-[#282828] hover:text-white duration-300">Add Chart</button></div> 
+    </div>`;
     } else if (data[i].category === "Batuk & Flu") {
-      getCardBatuk.innerHTML += `<div class="w-1/4 flex flex-col bg-[#ddeedf] rounded-lg hover:scale-110 ease-in-out transition-all shadow-lg duration-300">
+      getCardBatuk.innerHTML += `<div class="w-1/4 flex flex-col bg-[#ddeedf] rounded-lg hover:scale-110 ease-in-out transition-all shadow-lg duration-300 justify-between">
+    <div>
     <img src=${data[i].image} alt="" class="overflow-hidden rounded-t-lg">
     <p class="m-3 mb-1">${data[i].namaObat}</p>
     <p class="font-extralight mx-3 mb-1">${data[i].category}</p>
     <p class="mx-3">${data[i].harga}</p>
-    <button class="bg-white text-black my-7 rounded-md p-1 hover:bg-[#282828] hover:text-white duration-300">Add Chart</button> </div>`;
+    </div>
+    <div class="flex justify-center">
+    <button class="bg-white text-black my-7  rounded-md px-12 py-2 hover:bg-[#282828] hover:text-white duration-300">Add Chart</button></div>
+    </div>`;
     }
   }
 }
+
 card();
 // cart
 // let cartIcon = document.querySelector('')
