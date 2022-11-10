@@ -9,7 +9,7 @@
 </head>
 <body class="bg-black text-white">
     <div class="h-full w-1/4 bg-white fixed right-0 z-50" id="sideBar">
-        <div class="w-full h-20">
+        <div class="w-full h-10">
             <button class="float-right mt-3 mr-2 shadow-lg" onclick="handleSideNav">
                 <img src="../src/file-excel-fill.svg" alt="" class="w-6" id="closeSideNav">
             </button>
@@ -18,16 +18,24 @@
             <div class="text-center">
                 <h1 class="text-xl font-extralight text-black mb-4">Your Cart</h1>
             </div>
-            <div class="" id="cardProduk">
-                <h1 class="text-black text-xl font-extrabold">Brand</h1>
-                <h2 class="text-black">IDR Price</h2>
+            <div class="flex" id="cardProduk">
+                <div class="w-10/12 gap-y-3 flex flex-col">
+                    <h1 class="text-black text-xl font-extrabold">Brand</h1>
+                    <h2 class="text-black">IDR 0</h2>
+                    <input type="number" class="border-2 border-black w-10">
+                </div>
+                <div class="w-2/12 flex justify-center items-center">
+                    <img src="../src/trash3-fill.svg" alt="">
+                </div>
             </div>
-
+        </div>
+        <div class="w-full m-2 flex justify-end text-black">
+            <h1 class="mr-5">Total Price IDR</h1>
         </div>
 
-        <div class="text-black fixed bottom-4 w-full items-center flex">
-            <div>
-                <button class="p-2 bg-green-500">Buy Now</button>
+        <div class="text-black bottom-4 w-full absolute px-7">
+            <div class="p-2 bg-green-300 flex rounded-lg cursor-pointer">
+                <div class="w-full text-center">Buy Now</div>
             </div>
         </div>
     </div>
@@ -37,13 +45,13 @@
         <nav class="w-full fixed top-0 right-0 left-0 z-40" >
             <!-- bg-[#b6cdbd] -->
             <div class="flex justify-between bg-[#b6cdbd] opacity-100" id="home">
-                <div class="py-5 pl-10">
+                <div class="py-5 pl-10 cursor-pointer" href="#">
                     <h1 class="text-4xl font-serif font-thin">Blibat.com</h1>
                 </div>
                 <button onclick="handleSideNav">
                     <div class="p-5 flex cursor-pointer" id="openSideNav">                    
                         <img src="../src/cart4.svg" alt="" width="20px" height="20px">
-                        <h1 class="text-xl ml-2 self-center">Keranjang</h1>                    
+                        <h1 class="text-xl ml-2 self-center">Cart</h1>                    
                     </div>
                 </button>
             </div>
@@ -60,8 +68,8 @@
                     </div>
                     <div class="flex mt-4">
                         <div>
-                            <div class="text-black p-3 bg-white bg-opacity-60 rounded-2xl mr-5 inline-block backdrop-filter: blur(8px) hover:bg-[#3fffab] duration-300" href="#" >
-                                <button>Beli Sekarang</button>
+                            <div class="text-black p-3 bg-white bg-opacity-60 rounded-2xl mr-5 inline-block backdrop-filter: blur(8px) hover:bg-[#3fffab] duration-300" >
+                                <button href="#cattegory">Beli Sekarang</button>
                             </div>
                         </div>
                         <div>
@@ -86,8 +94,8 @@
             <div class="w-1/2"></div>
         </div>
         
-        <div class="listCategory w-full py-10 px-20 flex bg-[#282828] shadow-xl gap-25">
-            <a href="#pusing" class="w-1/4">
+        <div class="listCategory w-full py-10 px-20 flex bg-[#282828] shadow-xl gap-25" id="cattegory">
+            <a href="#pusing-target" class="w-1/4">
                 <div class="items-center flex flex-col">
                     <img id="pusing" src="https://img.freepik.com/premium-vector/young-woman-hold-her-head-because-illness-stress-work-flat-vector-cartoon-style-isolated_533406-282.jpg?w=740" alt="" class="w-1/2 rounded-full">
                     <p class="mt-4" class="">Pusing</p>
@@ -114,10 +122,9 @@
         </div>
         <div class="my-20">
             <img src="https://www.ovo.id/ovo_front_res/img/banners/scan-qr-cashback-30-persen.jpg" alt="">
-            <img src="https://a.m.dana.id/danaweb/promo/1667529208-WebBanner-BNI_Get_Benefit_Up_To_190K-1440x575px.png" alt="">
         </div>
         <div class="bg-white pt-4 pb-20 shadow-lg">
-            <br>
+            <br id="pusing-target">
             <div class="px-12">
                 <h1 class="text-2xl mb-7 text-[#282828]">Pusing</h1>
                 <div  id="pusing-container" class="catPusing gap-5 mx-16 flex bg-white text-black" >
@@ -208,7 +215,7 @@
                 </div>
             </div>
             <div class="h-1/4 flex items-end">
-                <h1>© 2022 Blibit | Blibit.com adalah merek milik PT Blibit Internasional Tbk. Terdaftar pada Direktorat Jendral Kekayaan Intelektual Republik Indonesia.</h1>
+                <h1>© 2022 Blibat | Blibat.com adalah merek milik PT Blibat Internasional Tbk. Terdaftar pada Direktorat Jendral Kekayaan Intelektual Republik Indonesia.</h1>
             </div>
         </div>
     </div>
@@ -221,16 +228,23 @@
             const sideBar = document.querySelector('#sideBar')
             const isActive = sideBar.classList.contains('invisible')
 
+            // if(isActive) {                
+            //     sideBar.classList.remove('invisible')
+            //     sideBar.classList.add('translate-x-full')
+            //     sideBar.classList.add('opacity-100')
+            // } else {                
+            //     sideBar.classList.add('invisible')                
+            // }
             if(isActive) {                
                 sideBar.classList.remove('invisible')
-                sideBar.classList.add('translate-x-full')
-                sideBar.classList.add('opacity-100')
             } else {                
                 sideBar.classList.add('invisible')                
             }
 
+
             const blury = document.querySelector('#blury')
             const isBlur = blury.classList.contains('z-10')
+            console.log(isBlur);
 
             if(isBlur){
                 blury.classList.add('opacity-75')
